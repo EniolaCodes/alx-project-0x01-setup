@@ -1,3 +1,15 @@
+export interface ButtonProps {
+  variant?: "primary" | "secondary" | "outline" | "ghost";
+  size?: "sm" | "md" | "lg";
+  label: string;
+  disabled?: boolean;
+  onClick?: () => void;
+  className?: string;
+  type?: "button" | "submit" | "reset";
+  icon?: React.ReactNode;
+  loading?: boolean;
+}
+
 export interface PostProps {
   userId: number;
   id: number;
